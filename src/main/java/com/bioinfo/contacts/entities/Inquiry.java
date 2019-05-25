@@ -1,23 +1,20 @@
 package com.bioinfo.contacts.entities;
 
-import org.springframework.data.cassandra.core.mapping.Column;
-import org.springframework.data.cassandra.core.mapping.PrimaryKey;
-import org.springframework.data.cassandra.core.mapping.Table;
+import java.io.Serializable;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NonNull;
 
 @Data
-@Table("enquiries")
 @AllArgsConstructor
-public class Inquiry {
+public class Inquiry implements Serializable {
 
-    @PrimaryKey
+    private static final long serialVersionUID = 5731155967427715938L;
+
     private String id;
     private @NonNull String email;
     private @NonNull String name;
-    @Column("insert_time")
     private @NonNull String insertTime;
     private @NonNull String message;
     private @NonNull String status;

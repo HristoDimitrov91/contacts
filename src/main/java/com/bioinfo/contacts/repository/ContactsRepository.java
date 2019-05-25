@@ -1,9 +1,13 @@
 package com.bioinfo.contacts.repository;
 
+import java.util.List;
+
 import com.bioinfo.contacts.entities.Inquiry;
 
-import org.springframework.data.repository.CrudRepository;
+public interface ContactsRepository {
 
-public interface ContactsRepository extends CrudRepository<Inquiry, String> {
+    void add(Inquiry inquiry);
+
+    List<Inquiry> getAll();
 
 }

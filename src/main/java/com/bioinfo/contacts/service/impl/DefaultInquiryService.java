@@ -1,8 +1,8 @@
 package com.bioinfo.contacts.service.impl;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.UUID;
 
 import com.bioinfo.contacts.entities.Inquiry;
@@ -27,7 +27,13 @@ public class DefaultInquiryService implements InquiryService {
     public String createInquiry(InquiryRequest request) {
         Inquiry inquiry = new Inquiry(UUID.randomUUID().toString(), request.getEmail(), request.getName(),
                 LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME), request.getMessage(), NOT_PROCESSED);
-        return repository.save(inquiry).getId();
+        repository.add(inquiry);
+        return inquiry.getId();
+    }
+
+    @Override
+    public List<Inquiry> getAll() {
+        return repository.getAll();
     }
 
 }
