@@ -1,6 +1,7 @@
 package com.bioinfo.contacts.repository.impl;
 
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
@@ -36,6 +37,13 @@ public class RedisRepository implements ContactsRepository {
     @Override
     public List<Inquiry> getAll() {
         return hashOperations.entries(INQUIRY).values().stream().collect(Collectors.toList());
+    }
+
+    @Override
+    public Set<String> deleteAll() {
+        Set<String> hashKeys = hashOperations.keys(INQUIRY);
+        redisTemplate.delete(INQUIRY);
+        return hashKeys;
     }
 
 }

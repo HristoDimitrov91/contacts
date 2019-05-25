@@ -3,6 +3,7 @@ package com.bioinfo.contacts.service.impl;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import com.bioinfo.contacts.entities.Inquiry;
@@ -34,6 +35,11 @@ public class DefaultInquiryService implements InquiryService {
     @Override
     public List<Inquiry> getAll() {
         return repository.getAll();
+    }
+
+    @Override
+    public Set<String> deleteAll() {
+        return repository.deleteAll();
     }
 
 }
