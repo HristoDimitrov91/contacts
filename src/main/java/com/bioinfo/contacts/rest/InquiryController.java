@@ -15,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
@@ -28,6 +29,13 @@ public class InquiryController {
 
         String inquiryId = inquiryService.createInquiry(request);
         return new ResponseEntity<>(inquiryId, HttpStatus.CREATED);
+    }
+
+    @PutMapping(value = "/inquiry")
+    public ResponseEntity<String> create(@RequestBody Inquiry request) {
+
+        inquiryService.updateInquiry(request);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @GetMapping(value = "/enquiries")

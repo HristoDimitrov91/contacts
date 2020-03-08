@@ -9,8 +9,10 @@ public interface ContactsRepository {
 
     void add(Inquiry inquiry);
 
+    void update(Inquiry inquiry);
+
     List<Inquiry> getAll();
 
-	Set<String> deleteAll();
+    Set<String> deleteAll();
 
 }

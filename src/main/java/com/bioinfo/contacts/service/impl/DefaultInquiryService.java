@@ -33,6 +33,11 @@ public class DefaultInquiryService implements InquiryService {
     }
 
     @Override
+    public void updateInquiry(Inquiry inquiry) {
+        repository.update(inquiry);
+    }
+
+    @Override
     public List<Inquiry> getAll() {
         return repository.getAll();
     }

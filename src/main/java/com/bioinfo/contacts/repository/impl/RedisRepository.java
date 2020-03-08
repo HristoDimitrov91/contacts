@@ -35,6 +35,11 @@ public class RedisRepository implements ContactsRepository {
     }
 
     @Override
+    public void update(Inquiry inquiry) {
+        hashOperations.put(INQUIRY, inquiry.getId(), inquiry);
+    }
+
+    @Override
     public List<Inquiry> getAll() {
         return hashOperations.entries(INQUIRY).values().stream().collect(Collectors.toList());
     }

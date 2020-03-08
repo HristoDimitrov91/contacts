@@ -8,10 +8,12 @@ import com.bioinfo.contacts.rest.resources.InquiryRequest;
 
 public interface InquiryService {
 
-	String createInquiry(InquiryRequest request);
+    String createInquiry(InquiryRequest request);
 
-	List<Inquiry> getAll();
+    void updateInquiry(Inquiry inquiry);
 
-	Set<String> deleteAll();
+    List<Inquiry> getAll();
+
+    Set<String> deleteAll();
 
 }
