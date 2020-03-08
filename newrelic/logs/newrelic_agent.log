@@ -1,0 +1,26 @@
+Mar 8, 2020 23:12:58 +0200 [2928 1] com.newrelic INFO: Writing to New Relic log file: C:\work\newrelic\logs\newrelic_agent.log
+Mar 8, 2020 23:12:58 +0200 [2928 1] com.newrelic INFO: JRE vendor Oracle Corporation version 1.8.0_211
+Mar 8, 2020 23:12:58 +0200 [2928 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 25.211-b12
+Mar 8, 2020 23:12:58 +0200 [2928 1] com.newrelic INFO: OS Windows 10 version 10.0 arch amd64
+Mar 8, 2020 23:12:58 +0200 [2928 1] com.newrelic INFO: Agent Host: DESKTOP-U5JGMUD IP: 192.168.0.17
+Mar 8, 2020 23:12:58 +0200 [2928 1] com.newrelic INFO: New Relic Agent v5.10.0 is initializing...
+Mar 8, 2020 23:12:59 +0200 [2928 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+Mar 8, 2020 23:13:03 +0200 [2928 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+Mar 8, 2020 23:13:03 +0200 [2928 1] com.newrelic INFO: Setting audit_mode to false
+Mar 8, 2020 23:13:03 +0200 [2928 1] com.newrelic INFO: Setting protocol to "https"
+Mar 8, 2020 23:13:06 +0200 [2928 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is C:\work\newrelic\.\newrelic.yml
+Mar 8, 2020 23:13:06 +0200 [2928 1] com.newrelic INFO: New Relic Agent v5.10.0 has started
+Mar 8, 2020 23:13:06 +0200 [2928 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@421faab1
+Mar 8, 2020 23:13:06 +0200 [2928 1] com.newrelic INFO: Premain startup complete in 10,319ms
+Mar 8, 2020 23:13:13 +0200 [2928 1] com.newrelic INFO: Server Info: Apache Tomcat/9.0.19
+Mar 8, 2020 23:13:21 +0200 [2928 30] com.newrelic INFO: Host name is DESKTOP-U5JGMUD, display host DESKTOP-U5JGMUD for application Contacts
+Mar 8, 2020 23:13:22 +0200 [2928 30] com.newrelic INFO: Collector redirection to collector-010.newrelic.com:443
+Mar 8, 2020 23:13:23 +0200 [2928 30] com.newrelic INFO: Max payload size is 1,000,000 bytes
+Mar 8, 2020 23:13:23 +0200 [2928 30] com.newrelic INFO: Agent run id: BTt1q76pLr1yACPomSDXQB5eZWBUAAIBAAAnIQEAAAtwAgAg10AcAwAGNS4xMC4wAA9ERVNLVE9QLVU1SkdNVUQACENvbnRhY3Rz
+Mar 8, 2020 23:13:23 +0200 [2928 30] com.newrelic INFO: Agent 2928@DESKTOP-U5JGMUD/Contacts connected to collector.newrelic.com:443
+Mar 8, 2020 23:13:23 +0200 [2928 30] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/2353305/applications/550977564
+Mar 8, 2020 23:13:23 +0200 [2928 30] com.newrelic INFO: Using default collector host: collector.newrelic.com
+Mar 8, 2020 23:13:23 +0200 [2928 30] com.newrelic INFO: Using default collector host: collector.newrelic.com
+Mar 8, 2020 23:13:23 +0200 [2928 30] com.newrelic INFO: Real user monitoring is enabled for application Contacts. Auto instrumentation is enabled.
+Mar 8, 2020 23:18:52 +0200 [2928 7] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+Mar 8, 2020 23:18:52 +0200 [2928 7] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
